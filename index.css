@@ -1,0 +1,187 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    
+
+}
+body{background-color: rgb(189, 189, 189);
+    
+}
+
+li, .a1{
+    font-family: sans-serif;
+    font-weight:650;
+    font-size: 15px;
+    color: rgb(225, 225, 225);
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 3.3%;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    justify-content: space-between;
+    height: 70px;
+    background-color: black;
+    
+}
+
+button{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    font-size:17.5px;
+}
+
+.pre-logo-svg{
+    height: 60px;
+    cursor: pointer ;
+
+}
+
+.navilinks {
+    list-style: none;
+    font-weight: 1000;
+    
+    
+}
+
+.navilinks li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.navilinks li a{
+    transition: all 0.3s ease 0s;
+    margin-left: 30px;
+}
+
+.navilinks li a:hover{
+    color: rgb(233, 251, 255);
+}
+
+.cta2-1{
+    padding: 9px 25px;
+    background-color: rgb(191, 49, 249);
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    margin-top: 15px; 
+}
+.cta2-1:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    
+
+}
+.cta2-2{
+    padding: 9px 25px;
+    background-color: RGB(189, 75, 75);
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    margin-top: 15px;
+}
+.cta2-2:hover{
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.cta2-3{
+    padding: 9px 25px;
+    background-color: rgb(189, 75, 75);
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 15px;
+}
+.cta2-3:hover{
+    background-color: black;
+    
+}
+
+.cta1-1:hover{
+    color: rgb(27, 27, 27);
+    background-color: rgb(167, 167, 167);
+}
+
+.div1{
+    display: flex;
+    margin: 15px 2% 0px;
+    justify-content:space-evenly;
+    height: 100%;
+    
+    
+}
+.div2{
+display: flex;
+height: 100%;
+
+}
+@media(max-width:720px){
+    .div2{
+        display: block;
+    }}
+    @media(max-width:720px){
+        .div4{
+            margin-top: 15px;
+        }}
+.div3{
+    display: block;padding-left: 6px;padding-right: 6px;
+}
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+h2{font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 1000;
+    margin-top: -15px;
+
+}
+.div3-2,.div4-2{padding-top: 20px;
+}
+
+
+
+
+.div4{
+    display: inline-block;
+    position: relative;
+    padding-left: 6px;padding-right: 6px;
+}
+
+
+
+
+
+
+
+
+.img1{
+    width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  border-radius: 30px;
+  cursor: pointer ;
+
+
+}
+.img2{
+    width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  border-radius: 30px;
+  cursor: pointer ;
+}
+
