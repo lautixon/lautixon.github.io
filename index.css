@@ -17,18 +17,28 @@ li, .a1{
     color: rgb(225, 225, 225);
     text-decoration: none;
     transition: all 0.5s ease 0s;
+    margin-left: 40px;
 }
 header {
-    display: flex;
-    align-items: center;
-    padding: 10px 3.3%;
+    display: block;
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
-    justify-content: space-between;
     height: 70px;
-    background-color: black;
+    background-color: black;   
+    align-content: center;
     
 }
+.divnavi{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 70px;
+     padding-left: 3.33%;
+     padding-right: 3.33%;
+     
+     
+}
+
 
 button{
     font-family: 'Roboto Condensed', sans-serif;
@@ -38,29 +48,29 @@ button{
 
 .pre-logo-svg{
     height: 60px;
-    cursor: pointer ;
+    cursor: pointer;
 
 }
 
 .navilinks {
     list-style: none;
     font-weight: 1000;
+    display: flex;
+
+    
     
     
 }
 
-.navilinks li{
-    display: inline-block;
-    padding: 0px 15px;
-}
+
+
 
 .navilinks li a{
     transition: all 0.3s ease 0s;
-    margin-left: 30px;
 }
 
 .navilinks li a:hover{
-    color: rgb(233, 251, 255);
+    color: RGB(191, 49, 249)
 }
 
 .cta2-1{
@@ -89,6 +99,7 @@ button{
     cursor: pointer;
     transition: all 0.5s ease 0s;
     margin-top: 15px;
+    margin-left: 5PX;
 }
 .cta2-2:hover{
     background-color: rgb(0, 0, 0);
@@ -104,6 +115,7 @@ button{
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-top: 15px;
+    margin-left: 5px;
 }
 .cta2-3:hover{
     background-color: black;
@@ -117,7 +129,7 @@ button{
 
 .div1{
     display: flex;
-    margin: 15px 2% 0px;
+    margin: 20px 2% 0px;
     justify-content:space-evenly;
     height: 100%;
     
@@ -151,22 +163,11 @@ h2{font-family: 'Oswald', sans-serif;
 }
 .div3-2,.div4-2{padding-top: 20px;
 }
-
-
-
-
 .div4{
     display: inline-block;
     position: relative;
     padding-left: 6px;padding-right: 6px;
 }
-
-
-
-
-
-
-
 
 .img1{
     width: auto !important;
@@ -185,3 +186,97 @@ h2{font-family: 'Oswald', sans-serif;
   cursor: pointer ;
 }
 
+.div5{
+    display: flex;
+    justify-content: center;
+    margin-left: min(20px);
+    margin-right: min(20px);
+    margin-top: min(25px);
+    margin-bottom: 3%;
+}
+.div5-1{
+    
+    position: relative;
+}
+.div5-2{
+    position: absolute;
+    bottom: 7% ;
+    left: 3%;
+    display: block;
+    max-width: 50%;
+    text-size-adjust:100%; 
+}
+@media(max-width:890px){
+    .div5-2{
+         position: relative;
+         bottom: 0;
+         left: 0;
+         display: inline-block;
+         max-width: 100%;
+         
+    }}
+    @media only screen and (max-width:890px){
+        .div5-2 .div5-2-h2{color: black;
+                     font-size: 50px;
+                     font-weight: 1000;
+        }
+    }
+    @media (max-width:890px){
+        .div5-2 .div5-2-p{color: black;
+            margin-top: 20px;
+
+        }
+    }
+    @media (max-width:890px){
+        .div5-2 .buttom1{margin-top: 15px;
+
+
+        }
+    }
+.div5-1 .img5{
+    width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  border-radius: 30px;
+
+
+
+} 
+.div5-2-p{
+    color: #ffffff;
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}   
+           
+.div5-2-h2{
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    
+   
+}
+.ul2{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.buttom1{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    list-style-type: none;
+  padding: 9px 25px;
+  margin-top: 20px;
+    
+}
+.buttom1:hover {
+    background-color: white;
+    color: black;
+}
+.li2{
+    margin-left: 0px;
+}
