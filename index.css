@@ -7,7 +7,7 @@
 
 }
 body{background-color: rgb(189, 189, 189);
-    
+    margin-top:0; 
 }
 
 li, .a1{
@@ -20,14 +20,22 @@ li, .a1{
     margin-left: 40px;
 }
 header {
+    position: relative;
     display: block;
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
     height: 70px;
     background-color: black;   
     align-content: center;
+    z-index: 1;
+    position:sticky;
+    width: 100%;
+    top: 0;
+    
+    
     
 }
+
 .divnavi{
      display: flex;
      justify-content: space-between;
@@ -99,13 +107,15 @@ button{
     cursor: pointer;
     transition: all 0.5s ease 0s;
     margin-top: 15px;
-    margin-left: 5PX;
+    
 }
 .cta2-2:hover{
     background-color: rgb(0, 0, 0);
     
 }
-
+.pn{
+    padding-bottom: 10px;
+}
 .cta2-3{
     padding: 9px 25px;
     background-color: rgb(189, 75, 75);
@@ -129,9 +139,10 @@ button{
 
 .div1{
     display: flex;
-    margin: 20px 2% 0px;
+    margin: 30px 2% 0px;
     justify-content:space-evenly;
     height: 100%;
+
     
     
 }
@@ -149,7 +160,7 @@ height: 100%;
             margin-top: 15px;
         }}
 .div3{
-    display: block;padding-left: 6px;padding-right: 6px;
+    display: block;padding-right: 6px;
 }
 p{
     font-family: 'Roboto Condensed', sans-serif;
@@ -166,7 +177,7 @@ h2{font-family: 'Oswald', sans-serif;
 .div4{
     display: inline-block;
     position: relative;
-    padding-left: 6px;padding-right: 6px;
+    padding-left: 6px;
 }
 
 .img1{
@@ -189,10 +200,7 @@ h2{font-family: 'Oswald', sans-serif;
 .div5{
     display: flex;
     justify-content: center;
-    margin-left: min(20px);
-    margin-right: min(20px);
-    margin-top: min(25px);
-    margin-bottom: 3%;
+    margin: 30px 2%;
 }
 .div5-1{
     
@@ -229,6 +237,12 @@ h2{font-family: 'Oswald', sans-serif;
     }
     @media (max-width:890px){
         .div5-2 .buttom1{margin-top: 15px;
+
+
+        }
+    }
+    @media (max-width:890px){
+      .cta2-1, .cta2-2,.cta2-3,.buttom1{margin-bottom: 30px;
 
 
         }
@@ -277,6 +291,150 @@ h2{font-family: 'Oswald', sans-serif;
     background-color: white;
     color: black;
 }
+
+
+
+
+.cta2-2-2{
+    background-color: RGB(29, 69, 103);
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    list-style-type: none;
+  padding: 9px 25px;
+  margin-top: 20px;
+}
+.cta2-1-1{
+    background-color: RGB(133, 78, 65);
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    list-style-type: none;
+  padding: 9px 25px;
+  margin-top: 20px;
+}
+footer{
+    display: flex;
+    width: 100%;
+    background-color: RGB(16, 17, 16);
+    height: 300px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    position: relative;
+    justify-content: center;
+    
+    
+    
+
+    
+}
+.divfooter{
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    margin-bottom: auto;
+    position: absolute;
+}
+.divfooter2{
+    display: flex;
+    height:200px;
+    width: 60%;
+    
+    
+}
+.divfooter2-1{
+    display: inline-block;
+    
+width: 50%;
+height: 100%;
+}
+
+.divfooter2-1-1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ulfooter1{
+    display: inline-block;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 80%;
+  
+}
+.li1{
+    padding-bottom: 15px;
+    text-decoration: none;
+    margin: 0px;
+    
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+}
+.divfooter2-3{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ACnike{
+    color:white;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
 .li2{
     margin-left: 0px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    
+}
+.ani{
+    color: rgb(103, 103, 103);
+    font-size: 12px;
+}
+.al1{
+    font-size: 11px;
+    width: 70%;
+}
+.arg1{
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.arg1-1{
+    margin-right: 10px;
+    font-size: 10px;
+}
+.arg1-2{
+    margin-left: 10px;
+    font-size: 10px;
+    color: rgb(103, 103, 103);;
+}
+
+.argprincipal{
+    display:flex;
+    justify-content: space-between;
+}
+.ul22{
+    list-style-type: none;
+    display: flex;
+    font-weight: 100;
+    
+}
+.a22{
+    color: rgb(103, 103, 103);
+    font-size: 10px;
+    font-family: sans-serif;
 }
