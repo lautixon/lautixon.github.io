@@ -8,6 +8,8 @@
 }
 body{background-color: rgb(189, 189, 189);
     margin-top:0; 
+    position: relative;
+
 }
 
 li, .a1{
@@ -41,8 +43,8 @@ header {
      justify-content: space-between;
      align-items: center;
      height: 70px;
-     padding-left: 3.33%;
-     padding-right: 3.33%;
+     padding-left: max(30px,3.33%);
+     padding-right: max(30px,3.33%);
      
      
 }
@@ -137,14 +139,11 @@ button{
     background-color: rgb(167, 167, 167);
 }
 
-.div1{
+.divprincipal{
     display: flex;
     margin: 30px 2% 0px;
     justify-content:space-evenly;
     height: 100%;
-
-    
-    
 }
 .div2{
 display: flex;
@@ -157,7 +156,7 @@ height: 100%;
     }}
     @media(max-width:720px){
         .div4{
-            margin-top: 15px;
+            margin-top: 50px;
         }}
 .div3{
     display: block;padding-right: 6px;
@@ -197,10 +196,16 @@ h2{font-family: 'Oswald', sans-serif;
   cursor: pointer ;
 }
 
-.div5{
+.divprincipal-2{
     display: flex;
     justify-content: center;
-    margin: 30px 2%;
+    margin: 30px 2% 0px;
+}
+.divprincipal-3{
+    display: flex;
+    margin: 30px 2% 0px;
+    justify-content:space-evenly;
+    height: 100%;
 }
 .div5-1{
     
@@ -247,6 +252,7 @@ h2{font-family: 'Oswald', sans-serif;
 
         }
     }
+
 .div5-1 .img5{
     width: auto !important;
   height: auto !important;
@@ -274,6 +280,31 @@ h2{font-family: 'Oswald', sans-serif;
     list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.coleccionesul{
+    list-style-type: none;
+  
+  padding: 0;
+  
+}
+.licolecciones{
+    margin-left: 0;
+    margin-bottom: 18px;
+}
+.acolecciones{
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+   cursor: pointer;
+    padding-left: 30px;
+    transition: all 0.1s ease 0s;
+}
+.acolecciones:hover{
+    color: #b9b9b9;
+}
+.coleccionetext{
+
 }
 .buttom1{
     background-color: rgb(0, 0, 0);
@@ -323,9 +354,10 @@ footer{
     background-color: RGB(16, 17, 16);
     height: 300px;
     margin-bottom: 15px;
-    margin-top: 20px;
+    margin-top: 25px;
     position: relative;
     justify-content: center;
+    
     
     
     
@@ -334,31 +366,45 @@ footer{
 }
 .divfooter{
     display: inline-block;
-    width: 90%;
+    width: 1800px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top:40px;
     margin-bottom: auto;
-    position: absolute;
+    
+    
 }
+.divfooter1{
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .divfooter2{
     display: flex;
     height:200px;
-    width: 60%;
-    
+    justify-content: start;
+    position: relative;
     
 }
+
 .divfooter2-1{
     display: inline-block;
-    
-width: 50%;
-height: 100%;
+
+    height: 100%;
 }
 
 .divfooter2-1-1{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.divfo{
+    display:flex;
+
+}
+.divfo2{
+    margin-left: 10px;
 }
 .ulfooter1{
     display: inline-block;
@@ -381,7 +427,7 @@ a {
 }
 .divfooter2-3{
     display: inline-block;
-    width: 50%;
+   
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -393,10 +439,11 @@ a {
 
 .li2{
     margin-left: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-top: 5px;
     font-weight: 100;
     color: rgb(0, 0, 0);
+    height: 100%;
     
 }
 .ani{
@@ -411,11 +458,16 @@ a {
     display: flex;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
     
 }
 .arg1-1{
     margin-right: 10px;
     font-size: 10px;
+    align-items: center;
+    display: flex;
+    
+    
 }
 .arg1-2{
     margin-left: 10px;
@@ -437,4 +489,162 @@ a {
     color: rgb(103, 103, 103);
     font-size: 10px;
     font-family: sans-serif;
+}
+.nikemenu{
+    display: none;
+}
+
+.svg2{
+    margin-right:10px ;
+}
+
+    @media(max-width:890px){
+    .a1{display: none;
+         
+         
+    }}
+@media(max-width:890px){
+    .nikemenu{
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.nikemenu .nikemenusvg:active{
+    fill: rgb(0, 0, 0);
+  
+}
+.menudesplegable{
+    color: rgb(0, 0, 0);
+    display: flex;
+    height: 615px;
+    width: 310px;
+    background-color: #000000;
+    position: absolute;
+    right: 0px;
+    justify-content: center;
+    
+    
+    
+}
+.buttonssi{
+    padding: 6px 21px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 40px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+.buttonssi2{
+    padding: 6px 16px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    
+}
+.buttonssi:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid rgb(46, 46, 46);
+
+}
+.buttonssi2:hover{
+    background-color: #ffffff;
+    color: #000000;
+    
+
+}
+.menudesplegable2{
+    display: grid;
+    grid-template-rows: 45% 55%;
+margin-top: 15px;
+    width: 290px;
+    height: 580px;
+    justify-content: space-between;
+    align-items: center;
+}
+.colecciones{
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 290px;
+    height: 100%;
+}
+.info{
+    display: grid;
+  
+    grid-gap:100px;
+    background-color: rgb(0, 0, 0);
+    width: 290px;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    justify-content: space-between;
+
+
+
+}
+.jordan{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.pjordan{
+    font-size: 15px;
+   font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+.miembro{
+    display: grid;
+    grid-gap: 20px;
+    
+    justify-content: space-between;
+}
+.miembrop{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+.clickclose{
+    display: flex;
+    justify-content: end;
+    
+}
+.clickclosepad{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: #000000;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+
+}
+.clickclosepad:hover{
+    background-color: #b9b9b9;
+
+}
+.clickclose-icon{
+    transition: all 0.3s ease 0s;
+}
+.clickclose-icon:hover{
+    fill: rgb(84, 84, 84);
 }
